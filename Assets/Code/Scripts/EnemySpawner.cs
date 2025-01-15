@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
 
+    [Header("Events")]
+    public static UnityEvent onEnemyDestroy = new UnityEvent();
+
     private int currentWave = 1;
     private float timeSinceLastSpwan;
     private int enemiesAlive;
@@ -21,9 +25,15 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesLeftToSpawn;
     private bool isSpawing = false;
 
+    private void Awake()
+    {
+        onEnemyDestroy.AddListener(EnemyDestroyed);
+    }
+
+
     private void Start()
     {
-        StartWave();
+        StartCoroutine(StartWave());
     }
 
     private void Update(){
@@ -31,15 +41,41 @@ public class EnemySpawner : MonoBehaviour
 
         timeSinceLastSpwan += Time.deltaTime;
 
-        if(timeSinceLastSpwan >= (1f / enemiesPerSecond)){
-            Debug.Log("Spwan Enemy");
+        if(timeSinceLastSpwan >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0){
+            SpawnEnemy();
+            enemiesLeftToSpawn--;
+            enemiesAlive++;
             timeSinceLastSpwan = 0f;
+        }
+
+        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0){
+            EndWave();
         }
     }
 
-    private void StartWave(){
+    private void EnemyDestroyed(){
+        enemiesAlive--;
+    }
+
+    private void SpawnEnemy()
+    {
+        GameObject prefabToSpawn = enemyPrefabs[0];
+        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+    }
+
+    private IEnumerator StartWave(){
+        yield return new WaitForSeconds(timeBetweenWaves);
+
         isSpawing=true;
         enemiesLeftToSpawn = EnemiesPerWave();
+    }
+
+    private void EndWave()
+    {
+        isSpawing = false;
+        timeSinceLastSpwan = 0f;
+        currentWave++;
+        StartCoroutine(StartWave());
     }
 
     private int EnemiesPerWave(){
