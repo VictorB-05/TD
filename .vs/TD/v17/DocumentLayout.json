@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\",
+  "WorkspaceRootPath": "C:\\Users\\Victor\\Desktop\\TD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\alumno\\desktop\\repo\\td\\td\\assets\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\alumno\\desktop\\repo\\td\\td\\assets\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\victor\\desktop\\td\\assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EnemyMovement.cs",
-              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\EnemyMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\EnemyMovement.cs",
-              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\EnemyMovement.cs",
-              "RelativeToolTip": "Assets\\EnemyMovement.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAmAAAAAAAAAA==",
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\Desktop\\TD\\Assets\\Code\\Scripts\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\Victor\\Desktop\\TD\\Assets\\Code\\Scripts\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Code\\Scripts\\EnemySpawner.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwA4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T19:20:35.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LevelManager.cs",
-              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\LevelManager.cs",
-              "RelativeDocumentMoniker": "Assets\\LevelManager.cs",
-              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\LevelManager.cs",
-              "RelativeToolTip": "Assets\\LevelManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T17:18:21.21Z",
+              "WhenOpened": "2025-01-15T12:53:19.088Z",
               "EditorCaption": ""
             }
           ]
