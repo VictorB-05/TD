@@ -45,11 +45,37 @@ public class Turret : MonoBehaviour {
     }
 
     private void FindTarget() {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)transform.position, 0f, enemyMask);
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(
+        transform.position, // El punto desde donde se lanza el "círculo".
+        targetingRange,     // El radio del círculo que define el rango de detección.
+        (Vector2)transform.position, // La dirección del lanzamiento.
+        0f,                 // La distancia del círculo proyectado (en este caso, 0 significa que el círculo no se mueve).
+        enemyMask           // La capa (layer mask) que filtra qué objetos detectar.
+        );
 
-        if (hits.Length > 0) {
-            target = hits[0].transform;
+        if (hits.Length > 0) { // Si hay al menos un objeto detectado...
+            target = hits[FindEndTarget(hits)].transform; // Guardamos el transform del primer objeto detectado como el objetivo.
         }
+    }
+
+    private int FindEndTarget(RaycastHit2D[] hits) {
+        int mayor = 0;
+        int result = 0;
+        for (int i = 0; i < hits.Length; i++) {
+            int aux = hits[i].transform.GetComponent<EnemyMovement>().getPathIndex();
+            if (aux > mayor) {
+                mayor = aux;
+                result = i;
+            }else if (aux == mayor) {
+                Transform punto = LevelManager.main.path[result];
+                float distance1 = Vector2.Distance(punto.transform.position, hits[i].transform.position);
+                float distance2 = Vector2.Distance(punto.transform.position, hits[result].transform.position);
+                if (distance1 < distance2) {
+                    result = i;
+                }
+            }
+        }
+        return result;
     }
 
     private bool CheckTargetIsInRange() {

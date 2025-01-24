@@ -9,4 +9,8 @@ public class LevelManager : MonoBehaviour {
     private void Awake() {
         main = this;
     }
+
+    public Transform getPath(int index) {
+        return path[index];
+    }
 }

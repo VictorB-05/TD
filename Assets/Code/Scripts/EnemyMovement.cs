@@ -16,6 +16,10 @@ public class EnemyMovement : MonoBehaviour {
         target = LevelManager.main.path[pathIndex];
     }
 
+    public int getPathIndex() {
+        return pathIndex;
+    }
+
     private void Update() {
         if (Vector2.Distance(target.position, transform.position) <= 0.1f) {
             pathIndex++;
