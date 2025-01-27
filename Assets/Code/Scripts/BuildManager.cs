@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BuildManager : MonoBehaviour
+{
+    public static BuildManager main;
+
+    [Header("Referernces")]
+    [SerializeField] private GameObject[] towerPrefabs;
+
+    private int selectedTower = 0;
+
+    private void Awake() {
+        main = this;
+    }
+
+    public GameObject getSelectedTower() {
+        return towerPrefabs[selectedTower];
+    }
+}

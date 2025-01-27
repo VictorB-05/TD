@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\alumno\\desktop\\repo\\td\\td\\assets\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\alumno\\desktop\\repo\\td\\td\\assets\\plot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\plot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\alumno\\desktop\\repo\\td\\td\\assets\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\alumno\\desktop\\repo\\td\\td\\assets\\code\\scripts\\bulidmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\bulidmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,28 +47,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Health.cs",
-              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Health.cs",
-              "RelativeDocumentMoniker": "Assets\\Health.cs",
-              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Health.cs",
-              "RelativeToolTip": "Assets\\Health.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Plot.cs",
+              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Plot.cs",
+              "RelativeDocumentMoniker": "Assets\\Plot.cs",
+              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Plot.cs",
+              "RelativeToolTip": "Assets\\Plot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T16:11:04.685Z",
+              "WhenOpened": "2025-01-27T16:24:41.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Bullet.cs",
-              "RelativeDocumentMoniker": "Assets\\Bullet.cs",
-              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Bullet.cs",
-              "RelativeToolTip": "Assets\\Bullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
+              "Title": "BulidManager.cs",
+              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\BulidManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\BulidManager.cs",
+              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\BulidManager.cs",
+              "RelativeToolTip": "Assets\\Code\\Scripts\\BulidManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T17:40:53.896Z",
+              "WhenOpened": "2025-01-27T16:16:03.718Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\Bullet.cs",
+              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Code\\Scripts\\Bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T16:14:17.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Health.cs",
+              "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\Health.cs",
+              "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Health.cs",
+              "RelativeToolTip": "Assets\\Code\\Scripts\\Health.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T16:11:44.35Z"
             },
             {
               "$type": "Document",
@@ -70,19 +102,19 @@
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\Turret.cs",
               "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Turret.cs",
               "RelativeToolTip": "Assets\\Code\\Scripts\\Turret.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwCsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwE4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T16:23:55.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "EnemyMovement.cs",
               "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\EnemyMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\EnemyMovement.cs",
               "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\EnemyMovement.cs",
               "RelativeToolTip": "Assets\\Code\\Scripts\\EnemyMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T16:30:34.826Z"
             },
@@ -94,19 +126,19 @@
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\LevelManager.cs",
               "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Code\\Scripts\\LevelManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T15:54:30.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\EnemySpawner.cs",
               "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\EnemySpawner.cs",
               "RelativeToolTip": "Assets\\Code\\Scripts\\EnemySpawner.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T12:53:19.088Z"
             }
