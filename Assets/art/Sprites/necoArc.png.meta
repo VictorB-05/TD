@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      necoArc_0: -2038410656077846233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
