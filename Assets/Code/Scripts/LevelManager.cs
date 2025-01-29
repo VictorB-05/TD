@@ -8,8 +8,9 @@ public class LevelManager : MonoBehaviour {
 
     public Transform startPoint;
     public Transform[] path;
-
     public int currency;
+    public int hp;
+
 
     private void Awake() {
         main = this;
@@ -17,6 +18,7 @@ public class LevelManager : MonoBehaviour {
 
     private void Start() {
         currency = 100;
+        hp = 10;
     }
 
     public Transform getPath(int index) {
@@ -34,6 +36,17 @@ public class LevelManager : MonoBehaviour {
         } else {
             Debug.Log("Falta dinero para comprar");
             return false;
+        }
+    }
+
+    public void DamageBase(int damage) {
+        hp -= damage;
+        Lose();
+    }
+
+    private void Lose() {
+        if (hp < 0) {
+            Debug.Log("Has perdido");
         }
     }
 }
