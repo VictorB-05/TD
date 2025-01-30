@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class LevelManager : MonoBehaviour {
 
     public Transform startPoint;
     public Transform[] path;
+    public Image vida;
     public int currency;
     public int hp;
 
@@ -41,6 +43,7 @@ public class LevelManager : MonoBehaviour {
 
     public void DamageBase(int damage) {
         hp -= damage;
+        vida.GetComponent<ConrolerHp>().SetHealt();
         Lose();
     }
 

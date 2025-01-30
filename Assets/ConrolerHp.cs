@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ConrolerHp : MonoBehaviour
+public class ControlerHp : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] TextMeshProUGUI currencyUI;
@@ -15,6 +15,6 @@ public class ConrolerHp : MonoBehaviour
     }
 
     public void SetHealt() {
-        slider.value = LevelManager.main.hp;
+        slider.value = (float)LevelManager.main.hp;
     }
 }
