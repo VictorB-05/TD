@@ -15,6 +15,7 @@ public class Turret : MonoBehaviour {
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 200f;
     [SerializeField] private float hps = 1f; // hits per second
+    [SerializeField] private float angle = 0f;
 
     private Transform target;
     private float timeUntilFire;
@@ -83,7 +84,7 @@ public class Turret : MonoBehaviour {
     }
 
     private void RotateTowardsTarget() {
-        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg + this.angle;
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
