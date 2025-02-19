@@ -73,7 +73,8 @@
     <Compile Include="Assets\Code\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Code\Scripts\Menu.cs" />
     <Compile Include="Assets\Code\Scripts\ConrolerHp.cs" />
-    <Compile Include="Assets\MenuGameOver.cs" />
+    <Compile Include="Assets\Code\Scripts\MainMenuControler.cs" />
+    <Compile Include="Assets\Code\Scripts\MenuGameOver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

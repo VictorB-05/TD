@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class LevelManager : MonoBehaviour {
     public Image vida;
     public int currency;
     public int hp;
+    [SerializeField] public Animator animator;
 
 
     private void Awake() {
@@ -47,9 +49,9 @@ public class LevelManager : MonoBehaviour {
         Lose();
     }
 
-    private void Lose() {
-        if (hp < 0) {
-            Debug.Log("Has perdido");
+    public void Lose() {
+        if (hp <= 0) {
+            animator.SetBool("GameOver", true);
         }
     }
 }
