@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
-    [SerializeField]  private int currentWave = 1;
+    [SerializeField]  private int currentWave = 0;
     private float timeSinceLastSpwan;
     [SerializeField] private int enemiesAlive;
     [SerializeField] public int enemiesDead;
@@ -29,10 +29,8 @@ public class EnemySpawner : MonoBehaviour
         onEnemyDestroy.AddListener(EnemyDestroyed);
     }
 
-
-    private void Start()
-    {
-        StartCoroutine(StartWave());
+    private void Start() {
+        LevelManager.main.onWaveStart.AddListener(StartWave);
     }
 
     private void Update(){
@@ -40,15 +38,16 @@ public class EnemySpawner : MonoBehaviour
 
         timeSinceLastSpwan += Time.deltaTime;
 
-        if(timeSinceLastSpwan >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0){
+        if (timeSinceLastSpwan >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0) {
             SpawnEnemy();
             enemiesLeftToSpawn--;
             enemiesAlive++;
             timeSinceLastSpwan = 0f;
         }
 
-        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0){
-            EndWave();
+        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0) {
+            isSpawing = false;
+            LevelManager.main.EndWave();  // Llamar a la función del LevelManager.
         }
     }
 
@@ -62,22 +61,10 @@ public class EnemySpawner : MonoBehaviour
         Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
     }
 
-    private IEnumerator StartWave(){
-        yield return new WaitForSeconds(timeBetweenWaves);
-
-        isSpawing=true;
-        enemiesLeftToSpawn = EnemiesPerWave();
+    private void StartWave() {
+        isSpawing = true;
+        enemiesLeftToSpawn = LevelManager.main.EnemiesPerWave();  // Usar la lógica de olas del LevelManager
+        
     }
 
-    private void EndWave()
-    {
-        isSpawing = false;
-        timeSinceLastSpwan = 0f;
-        currentWave++;
-        StartCoroutine(StartWave());
-    }
-
-    private int EnemiesPerWave(){
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
-    }
 }

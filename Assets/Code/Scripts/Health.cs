@@ -5,10 +5,16 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [Header("Atributes")]
-    [SerializeField] private int hitPoints = 2;
+    [SerializeField] private int hitPointsBase = 2;
+    [SerializeField] private int hitPoints = 0;
     [SerializeField] private int currencyWorth = 20;
 
     private bool isDestroyed=false;
+
+    private void Start() {
+        hitPoints = hitPointsBase * (LevelManager.main.GetWave()-1); // Inicializar la vida con el valor base
+        Debug.Log(hitPoints+"  "+LevelManager.main.GetWave());
+    }
 
     public void TakeDamage(int dmg) {
         hitPoints -= dmg;    

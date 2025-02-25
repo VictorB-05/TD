@@ -10,7 +10,6 @@ public class MenuGameOver : MonoBehaviour
     }
 
     public void MenuInicial() {
-        Debug.Log("tas pasando");
         SceneManager.LoadScene("Inicio");
     }
 }
