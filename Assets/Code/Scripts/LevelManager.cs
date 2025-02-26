@@ -70,16 +70,22 @@ public class LevelManager : MonoBehaviour {
         StartCoroutine(HandleWave());
     }
 
-    private IEnumerator HandleWave() {
+    private IEnumerator HandleWave()
+    {
         yield return new WaitForSeconds(timeBetweenWaves);
-
-        onWaveStart.Invoke();  // Iniciar la ola en el EnemySpawner
-        // Incrementar la dificultad después de cada ola.
-        currentWave++;
+        onWaveStart.Invoke(); // Llama a la ola actual (currentWave aún no incrementado)
+        currentWave++; // Incrementa después de iniciar la ola
     }
 
     public int EnemiesPerWave() {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
+        if (currentWave == 0)
+        {
+            return baseEnemies;
+        }
+        else
+        {
+            return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
+        }
     }
 
     public void EndWave() {

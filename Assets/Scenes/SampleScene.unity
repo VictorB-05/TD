@@ -6245,6 +6245,12 @@ MonoBehaviour:
   currency: 0
   hp: 0
   animator: {fileID: 1926729949}
+  baseEnemies: 8
+  timeBetweenWaves: 2
+  difficultyScalingFactor: 0.75
+  onWaveStart:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1033204069
 Transform:
   m_ObjectHideFlags: 0
@@ -6281,7 +6287,7 @@ MonoBehaviour:
   enemiesPerSecond: 1.5
   timeBetweenWaves: 3
   difficultyScalingFactor: 0.75
-  currentWave: 1
+  currentWave: 0
   enemiesAlive: 0
   enemiesDead: 0
 --- !u!114 &1033204071

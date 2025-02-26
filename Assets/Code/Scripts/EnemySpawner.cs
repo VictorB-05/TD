@@ -8,7 +8,6 @@ public class EnemySpawner : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
 
-
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
     [SerializeField] private float enemiesPerSecond = 0.5f;
@@ -17,54 +16,69 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
-    [SerializeField]  private int currentWave = 0;
-    private float timeSinceLastSpwan;
+
+    [SerializeField] private int currentWave = 0;
+    private float timeSinceLastSpawn;
     [SerializeField] private int enemiesAlive;
     [SerializeField] public int enemiesDead;
     private int enemiesLeftToSpawn;
-    private bool isSpawing = false;
+    private bool isSpawning = false;
+    private bool waveStarted = false;  // Nueva variable para controlar si la ola ha comenzado
 
     private void Awake()
     {
         onEnemyDestroy.AddListener(EnemyDestroyed);
     }
 
-    private void Start() {
+    private void Start()
+    {
         LevelManager.main.onWaveStart.AddListener(StartWave);
     }
 
-    private void Update(){
-        if (!isSpawing) return;
+    private void Update()
+    {
+        if (!isSpawning || !waveStarted) return;  // Solo ejecutar si la ola ha comenzado
 
-        timeSinceLastSpwan += Time.deltaTime;
+        timeSinceLastSpawn += Time.deltaTime;
 
-        if (timeSinceLastSpwan >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0) {
+        if (timeSinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0)
+        {
             SpawnEnemy();
             enemiesLeftToSpawn--;
             enemiesAlive++;
-            timeSinceLastSpwan = 0f;
+            timeSinceLastSpawn = 0f;
         }
 
-        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0) {
-            isSpawing = false;
-            LevelManager.main.EndWave();  // Llamar a la función del LevelManager.
+        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0)
+        {
+            Debug.Log("QUE?");
+            EndWave();
         }
     }
 
-    private void EnemyDestroyed(){
+    private void EnemyDestroyed()
+    {
         enemiesAlive--;
     }
 
-    private void SpawnEnemy() { 
+    private void SpawnEnemy()
+    {
         int index = Random.Range(0, enemyPrefabs.Length);
         GameObject prefabToSpawn = enemyPrefabs[index];
         Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
     }
 
-    private void StartWave() {
-        isSpawing = true;
-        enemiesLeftToSpawn = LevelManager.main.EnemiesPerWave();  // Usar la lógica de olas del LevelManager
-        
+    private void StartWave()
+    {
+        waveStarted = true;  // Marcar que la ola ha comenzado
+        isSpawning = true;
+        enemiesLeftToSpawn = LevelManager.main.EnemiesPerWave();
     }
 
+    private void EndWave()
+    {
+        waveStarted = false;  // Marcar que la ola ha terminado
+        isSpawning = false;
+        LevelManager.main.EndWave();  // Llamar a la función del LevelManager.
+    }
 }

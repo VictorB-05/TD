@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|c:\\users\\alumno\\desktop\\repo\\td\\td\\assets\\code\\scripts\\controlerhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\tower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\tower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}|Assembly-CSharp.csproj|C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\assets\\code\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Tower.cs",
               "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Tower.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\Tower.cs",
@@ -148,33 +148,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\LevelManager.cs",
               "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Code\\Scripts\\LevelManager.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwCIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T15:54:30.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\EnemySpawner.cs",
               "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\EnemySpawner.cs",
               "RelativeToolTip": "Assets\\Code\\Scripts\\EnemySpawner.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwDEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T12:53:19.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ControlerHp.cs",
               "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\ControlerHp.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\ControlerHp.cs",
@@ -226,13 +226,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Health.cs",
               "DocumentMoniker": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Scripts\\Health.cs",
               "ToolTip": "C:\\Users\\alumno\\Desktop\\repo\\td\\TD\\Assets\\Code\\Scripts\\Health.cs",
               "RelativeToolTip": "Assets\\Code\\Scripts\\Health.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T16:11:44.35Z",
               "EditorCaption": ""

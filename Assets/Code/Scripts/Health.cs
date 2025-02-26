@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
     private bool isDestroyed=false;
 
     private void Start() {
-        hitPoints = hitPointsBase * (LevelManager.main.GetWave()-1); // Inicializar la vida con el valor base
+        hitPoints = hitPointsBase * (LevelManager.main.GetWave()); // Inicializar la vida con el valor base
         Debug.Log(hitPoints+"  "+LevelManager.main.GetWave());
     }
 
