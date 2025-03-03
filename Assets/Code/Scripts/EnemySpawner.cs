@@ -9,15 +9,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject[] enemyPrefabs;
 
     [Header("Attributes")]
-    [SerializeField] private int baseEnemies = 8;
     [SerializeField] private float enemiesPerSecond = 0.5f;
-    [SerializeField] private float timeBetweenWaves = 2f;
-    [SerializeField] private float difficultyScalingFactor = 0.75f;
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
 
-    [SerializeField] private int currentWave = 0;
     private float timeSinceLastSpawn;
     [SerializeField] private int enemiesAlive;
     [SerializeField] public int enemiesDead;
@@ -51,7 +47,6 @@ public class EnemySpawner : MonoBehaviour
 
         if (enemiesAlive == 0 && enemiesLeftToSpawn == 0)
         {
-            Debug.Log("QUE?");
             EndWave();
         }
     }
@@ -79,6 +74,6 @@ public class EnemySpawner : MonoBehaviour
     {
         waveStarted = false;  // Marcar que la ola ha terminado
         isSpawning = false;
-        LevelManager.main.EndWave();  // Llamar a la función del LevelManager.
+        LevelManager.main.StartNextWave();  // Llamar a la función del LevelManager.
     }
 }

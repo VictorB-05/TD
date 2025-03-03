@@ -12,7 +12,6 @@ public class Bullet : MonoBehaviour{
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private int bulletDamage = 1;
-    [SerializeField] private float rotationSpeed = 200f;
     [SerializeField] private float angle = 0f;
 
     private Transform target;

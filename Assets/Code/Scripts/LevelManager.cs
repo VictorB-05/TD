@@ -65,7 +65,7 @@ public class LevelManager : MonoBehaviour {
             animator.SetBool("GameOver", true);
         }
     }
-    
+
     public void StartNextWave() {
         StartCoroutine(HandleWave());
     }
@@ -88,10 +88,7 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
-    public void EndWave() {
-        // Llamar a la siguiente ola en el LevelManager
-        StartNextWave();
-    }
+
 
     public int GetWave() {
         return currentWave;
